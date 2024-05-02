@@ -6,7 +6,7 @@
 /*   By: ccur < ccur@student.42kocaeli.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 12:04:32 by ccur              #+#    #+#             */
-/*   Updated: 2024/04/28 00:58:52 by ccur             ###   ########.fr       */
+/*   Updated: 2024/05/02 21:03:54 by ccur             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ void	get_pixel_texture(t_cub *cub, const size_t i)
 
 void	tmp_verification(t_cub *cub, size_t i)
 {
-	if (!ft_strncmp(cub->tmp1_2, \
-		"/* columns rows colors chars-per-pixel */", 41))
+	if (!ft_strncmp(cub->tmp1_2, "/* columns rows colors chars-per-pixel */",
+			41))
 	{
 		get_pixel_color(cub, i);
 		get_pixel_texture(cub, i);
@@ -69,7 +69,6 @@ void	tmp_verification(t_cub *cub, size_t i)
 				cub->texture_we = convert_texture(cub);
 			else
 				cub->texture_ea = convert_texture(cub);
-			
 		}
 		ft_free_double(&cub->tmp2_0);
 		ft_free_double(&cub->tmp2_1);
@@ -84,8 +83,9 @@ void	getting_p_texture(t_cub *cub, size_t j[], size_t i, char *tmp)
 		j[1] = 0;
 		while (cub->tmp1_2[j[0]])
 		{
-			while (cub->tmp1_2[j[0]] && (ft_strchr("\"", cub->tmp1_2[j[0]]) \
-				|| (cub->tmp1_2[j[0]] == ',' && (int)j[0] == cub->tmp0_0 - 2)))
+			while (cub->tmp1_2[j[0]] && (ft_strchr("\"", cub->tmp1_2[j[0]])
+					|| (cub->tmp1_2[j[0]] == ',' && (int)j[0] == cub->tmp0_0
+						- 2)))
 				j[0]++;
 			cub->tmp1_0[j[1]++] = cub->tmp1_2[j[0]++];
 		}

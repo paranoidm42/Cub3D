@@ -6,7 +6,7 @@
 /*   By: ccur < ccur@student.42kocaeli.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 12:04:32 by ccur              #+#    #+#             */
-/*   Updated: 2024/04/28 00:58:55 by ccur             ###   ########.fr       */
+/*   Updated: 2024/05/02 21:04:13 by ccur             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	get_pixel_color(t_cub *cub, const size_t i)
 		j[0] = 0;
 		j[1] = 0;
 		build_pixels(cub, i, j, tmp);
-
 	}
 	ft_free_single((void **)&cub->tmp1_0);
 	cub->tmp2_0 = ft_split(cub->tmp1_1, '\n');

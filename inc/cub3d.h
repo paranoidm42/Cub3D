@@ -6,7 +6,7 @@
 /*   By: ccur < ccur@student.42kocaeli.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 12:04:32 by ccur              #+#    #+#             */
-/*   Updated: 2024/05/02 20:59:27 by ccur             ###   ########.fr       */
+/*   Updated: 2024/05/02 21:01:44 by ccur             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,19 @@
 # define CUB3D_H
 
 # include "../lib/libft/libft.h"
+# include "../lib/libmlx/Darwin/mlx.h"
 # include "get_next_line.h"
 # include <fcntl.h>
 # include <math.h>
-
-#  include "../lib/libmlx/Darwin/mlx.h"
-#  define W_KEY 13
-#  define S_KEY 1
-#  define D_KEY 2
-#  define A_KEY 0
-#  define LEFT_KEY 123
-#  define RIGHT_KEY 124
-#  define ESC_KEY 53
-#  define DEL_KEY 51
-#  define BACK_KEY 51
-
+# define W_KEY 13
+# define S_KEY 1
+# define D_KEY 2
+# define A_KEY 0
+# define LEFT_KEY 123
+# define RIGHT_KEY 124
+# define ESC_KEY 53
+# define DEL_KEY 51
+# define BACK_KEY 51
 
 # define HEIGHT 768
 # define WIDTH 1280

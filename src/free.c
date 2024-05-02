@@ -6,7 +6,7 @@
 /*   By: ccur < ccur@student.42kocaeli.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 12:04:32 by ccur              #+#    #+#             */
-/*   Updated: 2024/04/28 00:59:40 by ccur             ###   ########.fr       */
+/*   Updated: 2024/05/02 21:01:01 by ccur             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	ft_free_double_int(int ***ptr, size_t size)
 
 	if (*ptr && size)
 	{
-	tmp = *ptr;
+		tmp = *ptr;
 		i = 0;
 		while (i < size)
 		{
