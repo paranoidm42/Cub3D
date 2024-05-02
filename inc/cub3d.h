@@ -20,7 +20,7 @@
 # include <fcntl.h>
 # include <math.h>
 
-# ifdef __linux__
+
 #  include "../lib/libmlx/Darwin/mlx.h"
 #  define W_KEY 119
 #  define S_KEY 115
@@ -31,18 +31,7 @@
 #  define ESC_KEY 65307
 #  define DEL_KEY 65535
 #  define BACK_KEY 65288
-# else
-#  include "../lib/miniLib/miniLibX/mlx.h"
-#  define W_KEY 13
-#  define S_KEY 1
-#  define D_KEY 2
-#  define A_KEY 0
-#  define LEFT_KEY 123
-#  define RIGHT_KEY 124
-#  define ESC_KEY 53
-#  define DEL_KEY 51
-#  define BACK_KEY 51
-# endif
+
 
 # define HEIGHT		768
 # define WIDTH		1280
