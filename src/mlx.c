@@ -6,7 +6,7 @@
 /*   By: ccur < ccur@student.42kocaeli.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 12:04:32 by ccur              #+#    #+#             */
-/*   Updated: 2024/04/28 01:00:01 by ccur             ###   ########.fr       */
+/*   Updated: 2024/05/02 20:53:19 by ccur             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ void	init_mlx(t_cub *cub)
 
 int	destruct_mlx(t_cub *cub)
 {
-	mlx_clear_window(cub->mlx, cub->win);
+	if(cub->win)
+		mlx_clear_window(cub->mlx, cub->win);
 	if (cub->img)
 		mlx_destroy_image(cub->mlx, cub->img);
 	cub->img = NULL;
